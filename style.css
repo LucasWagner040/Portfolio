@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
+}
   html {
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -50,7 +50,8 @@
     color: white;
   }
   .brand h1 span {
-    color: rgb(19, 0, 194);
+    color: rgb(255, 57, 57);
+    font-size: 3.5rem;
   }
   
   /* Header section */
@@ -64,7 +65,7 @@
   }
   #header .header {
     min-height: 8vh;
-    background: linear-gradient(90deg, rgb(19, 0, 194, .4), rgb(31, 30, 30), rgb(31, 30, 30, .7));
+    background: linear-gradient(90deg, rgb(189, 0, 0), rgb(31, 30, 30), rgb(31, 30, 30));
     transition: .3s ease background-color;
   }
   #header .nav-bar {
@@ -74,7 +75,7 @@
     width: 100%;
     height: 100%;
     max-width: 1300px;
-    padding: 0 10px;
+    padding: 0 1%;
   }
   #header .nav-list ul {
     list-style: none;
@@ -111,7 +112,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    color: rgba(240, 248, 255, 0.021);
+    color: rgb(240, 248, 255);
     font-size: 13rem;
     letter-spacing: 50px;
     z-index: -1;
@@ -182,7 +183,6 @@
   
   /* Hero Section */
   #hero {
-    background-image: url(./img/hero-bg.png);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -193,7 +193,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    height: 100%;
+    height: 80%;
     width: 100%;
     background-color: rgb(0, 0, 0);
     opacity: .9;
@@ -202,38 +202,28 @@
   #hero .hero {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 13vmax 15% 14vmax 29vmax;
     justify-content: flex-start;
-    padding: 20% 0px 15% 10%;
   }
   #hero h1 {
     display: block;
-    width: fit-content;
-    font-size: 4rem;
-    position: relative;
+    width: fit-content;;
+    font-size: 4vh;
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: 1s;
   }
   #hero h1:nth-child(1) {
     animation-delay: 1s;
+    padding: 0 0 0 10%;
   }
   #hero h1:nth-child(2) {
     animation-delay: 2s;
+    padding: 0 0 0 5%;
   }
   #hero h1:nth-child(3) {
     animation: text_reveal_name .5s ease forwards;
     animation-delay: 3s;
-  }
-  #hero h1 span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    background-color: rgba(2, 2, 110, 0.788);
-    animation: text_reveal_box 1s ease;
-    animation-delay: .5s;
   }
   #hero h1:nth-child(1) span {
     animation-delay: .5s;
@@ -251,9 +241,9 @@
   #services .services {
     flex-direction: column;
     text-align: center;
-    max-width: 1500px;
+    max-width: 90%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 0;
   }
   #services .service-top {
     max-width: 500px;
@@ -269,17 +259,15 @@
   #services .service-item {
     flex-basis: 80%;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    padding: 30px;
-    border-radius: 10px;
-    background-image: url(./img/img-1.png);
+    padding: 1.5cm;
     background-size: cover;
-    margin: 10px 5%;
+    margin: 10px 20%;
     position: relative;
     z-index: 1;
-    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(168, 1, 1);
   }
   #services .service-item::after {
     content: '';
@@ -288,24 +276,26 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, #130144 0%, #000000 100%);
+    border-radius: 20px;
+    background-image: linear-gradient(60deg, #840101 0%, #000000 100%);
     opacity: .9;
     z-index: -1;
   }
   #services .service-bottom .icon {
-    height: 80px;
-    width: 80px;
+    height:10vh;
+    width:10vh;
     margin-bottom: 20px;
   }
   #services .service-item h2 {
     font-size: 2rem;
     color: white;
-    margin-bottom: 10px;
+    text-shadow: 0 0 3px white;
+    text-align: center;
     text-transform: uppercase;
   }
   #services .service-item p {
     color: white;
-    text-align: left;
+    text-align: center;
   }
   /* End Services Section */
   
@@ -469,7 +459,7 @@
   
   /* Footer */
   #footer {
-    background-image: linear-gradient(60deg,#130144 0%, #000000 100%);
+    background-image: linear-gradient(60deg,#780000 0%, #000000 100%);
   }
   #footer .footer {
     min-height: 200px;
@@ -495,7 +485,6 @@
     margin: 0 5px;
   }
   #footer .social-item img {
-    filter: grayscale(1);
     transition: .3s ease filter;
   }
   #footer .social-item:hover img {
@@ -549,7 +538,7 @@
   
     /* Hero */
     #hero h1 {
-      font-size: 7rem;
+      font-size: 6rem;
     }
     /* End Hero */
   
