@@ -33,10 +33,10 @@
     letter-spacing: .05rem;
   }
   .section-title {
-    font-size: 4rem;
-    font-weight: 300;
+    font-size: 4vh;
+    font-weight:bold;
     color: black;
-    margin-bottom: 10px;
+    margin: 10px;
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
@@ -125,7 +125,7 @@
   #header .nav-list ul li:hover a {
     color: crimson;
   }
-  #header .hamburger {
+  /* #header .hamburger {
     height: 60px;
     width: 60px;
     display: inline-block;
@@ -139,8 +139,8 @@
     cursor: pointer;
     transform: scale(.8);
     margin-right: 20px;
-  }
-  #header .hamburger:after {
+  } */
+  /* #header .hamburger:after {
     position: absolute;
     content: '';
     height: 100%;
@@ -148,7 +148,7 @@
     border-radius: 50%;
     border: 3px solid white;
     animation: hamburger_puls 1s ease infinite;
-  }
+  } */
   #header .hamburger .bar {
     height: 2px;
     width: 30px;
@@ -202,7 +202,7 @@
   #hero .hero {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 13vmax 15% 14vmax 29vmax;
+    padding: 13vmax 0 14vmax 10%;
     justify-content: flex-start;
   }
   #hero h1 {
@@ -215,11 +215,9 @@
   }
   #hero h1:nth-child(1) {
     animation-delay: 1s;
-    padding: 0 0 0 10%;
   }
   #hero h1:nth-child(2) {
     animation-delay: 2s;
-    padding: 0 0 0 5%;
   }
   #hero h1:nth-child(3) {
     animation: text_reveal_name .5s ease forwards;
