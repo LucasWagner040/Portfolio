@@ -316,12 +316,7 @@ header .tela-inicio h1 {
 }
 
 .pass-art .conteudo-sobre2 div:nth-child(2) a {
-  margin-left: 13.4%;
-}
-
-.pass-art .conteudo-sobre2 div:nth-child(2) a  img{
-  width: 50px;
-  height: 50px;
+  margin-left: 15.5%;
 }
 
 .pass-art .conteudo-sobre {
@@ -504,5 +499,14 @@ header .tela-inicio h1 {
   top: -1px;
   position: relative;
   color: black;
+}
+
+.pass-art .conteudo-sobre2 div:nth-child(2) a {
+  margin-left: 13.4%;
+}
+
+.pass-art .conteudo-sobre2 div:nth-child(2) a img {
+  width: 50px;
+  height: 50px;
 }
 /*# sourceMappingURL=main.css.map */

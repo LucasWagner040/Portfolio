@@ -3,7 +3,6 @@
 $backgrond-principal: linear-gradient(180deg, #000000 50.52%, rgba(2, 77, 0, 0) 100%);
 $backgrond-segundario: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%);
 $backgrond-terciario: linear-gradient(90deg, #00424b 0%, #24ff00 100%);
-
 a {
     color: white !important;
     text-decoration: none !important;
@@ -18,13 +17,11 @@ a {
 body {
     background: #00424b !important;
 }
-
 .subtitulo {
     color: white;
     text-align: center;
     margin: 60px;
 }
-
 header nav {
     background-color: black;
     height: 50px;
@@ -32,7 +29,6 @@ header nav {
     width: 100%;
     top: 0px;
     z-index: 300;
-
     h1 {
         margin: 0 0 0 95px;
         padding: 9px 0 0 0;
@@ -44,13 +40,11 @@ header nav {
         float: right;
         margin: 0 95px 0 0;
         padding: 9px 0 0 0;
-
         a {
             font-size: 20px;
             color: white;
             margin: 0 0 0 30px;
             text-decoration: none;
-
             &:hover {
                 color: rgba(0, 191, 217, 0.49) !important;
             }
@@ -61,7 +55,6 @@ header .tela-inicio {
     background: $backgrond-principal;
     height: 472px;
     align-items: center;
-
     h1 {
         width: 100%;
         height: 140px;
@@ -72,13 +65,11 @@ header .tela-inicio {
         font-family: "Ledger", serif;
     }
 }
-
 .sobre-section {
     background: $backgrond-segundario;
     padding: 1px;
     border-radius: 35px 35px 0 0;
     width: 100%;
-
     img,
     button {
         width: 35px;
@@ -89,7 +80,6 @@ header .tela-inicio {
         border: 0px;
         position: absolute;
     }
-
     section {
         width: 100%;
         height: 250px;
@@ -97,11 +87,9 @@ header .tela-inicio {
         border-radius: 35px 35px 0 0;
         padding: 45px;
         display: flex;
-
         .img-vers {
             transform: rotate(180deg);
         }
-
         .typ-balao-1 {
             margin: 0 30px;
             padding: 15px;
@@ -114,7 +102,6 @@ header .tela-inicio {
             position: relative;
             z-index: 10;
             transition: all 0.25s ease;
-
             svg {
                 width: 80px;
                 height: 80px;
@@ -123,7 +110,6 @@ header .tela-inicio {
         }
     }
 }
-
 .progresso {
     border: 1px solid black;
     height: 12px;
@@ -136,27 +122,22 @@ header .tela-inicio {
         background: $backgrond-terciario;
     }
 }
-
 .cartao i.bx {
     position: absolute;
     right: 0px;
     top: 0px;
     font-size: 1.3rem;
 }
-
 .cartao .con-text {
     padding: 20px;
 }
-
 .cartao:hover {
     transform: translate(0, -5px);
     box-shadow: 0px 17px 35px 0px rgba(0, 0, 0, 0.07);
 }
-
 .cartao:hover .com-img {
     transform: translate(0, -20px);
 }
-
 .cartao .com-img {
     width: calc(100% - 60px);
     margin: auto;
@@ -165,14 +146,12 @@ header .tela-inicio {
     justify-content: center;
     transition: all 0.35s ease-out;
 }
-
 .cartao svg,
 .cartao img {
     height: 90px;
     padding: 20px 0 0 0;
     box-sizing: content-box;
 }
-
 .cartao {
     border: 1px solid black;
     width: 300px;
@@ -187,7 +166,6 @@ header .tela-inicio {
     transition: all 0.25s ease;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
 }
-
 .con-cartoes {
     display: flex;
     align-items: center;
@@ -198,11 +176,9 @@ header .tela-inicio {
     padding-right: 50px;
     scroll-behavior: smooth;
 }
-
 .con-cartoes::-webkit-scrollbar {
     height: 0px;
 }
-
 .con-cartoes:after {
     content: "";
     display: block;
@@ -210,7 +186,6 @@ header .tela-inicio {
     height: 100px;
     position: relative;
 }
-
 .botao {
     min-width: 60px;
     height: 60px;
@@ -224,7 +199,6 @@ header .tela-inicio {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
     transition: all 0.25s ease;
 }
-
 .botao:hover {
     transform: translate(0, -10px);
     box-shadow: 0px 17px 35px 0px rgba(0, 0, 0, 0.07);
@@ -242,18 +216,15 @@ header .tela-inicio {
     overflow: hidden;
     border-radius: 35px 35px 0px 0px;
 }
-
 .pass-art {
     padding: 1px 2px 0 2px;
     width: 100%;
     border-radius: 36px;
     background: linear-gradient(180deg, #ffffff 0%, rgba(2, 77, 0, 0.1) 50%, rgba(2, 77, 0, 0) 0%);
-
     .conteudo-sobre2 {
         width: 100%;
         padding-top: 2%;
         height: 100%;
-
         div:nth-child(1) {
             margin-left: calc(50% - 60px);
             margin-right: calc(50% - 60px);
@@ -263,7 +234,6 @@ header .tela-inicio {
                 color: white;
             }
         }
-
         div:nth-child(2) {
             // border: 1px solid white;
             width: 100%;
@@ -275,7 +245,6 @@ header .tela-inicio {
             }
         }
     }
-
     .conteudo-sobre {
         width: 100%;
         padding-left: 7%;
@@ -325,7 +294,6 @@ header .tela-inicio {
         }
     }
 }
-
 .art-2 {
     width: 100%;
     display: flex;
@@ -348,7 +316,6 @@ header .tela-inicio {
         }
     }
 }
-
 .conteudo:after {
     content: "";
     left: 80px;
@@ -392,7 +359,6 @@ header .tela-inicio {
         }
     }
 }
-
 .cartoes2 .cartao {
     min-width: 220px;
 }
@@ -423,7 +389,6 @@ header .tela-inicio {
     text-decoration: none;
     background: $backgrond-terciario;
 }
-
 .modal {
     .modal-content {
         border-radius: 10px;
@@ -446,4 +411,12 @@ header .tela-inicio {
             color: black;
         }
     }
+}
+.pass-art .conteudo-sobre2 div:nth-child(2) a {
+    margin-left: 13.4%;
+}
+
+.pass-art .conteudo-sobre2 div:nth-child(2) a img {
+    width: 50px;
+    height: 50px;
 }
