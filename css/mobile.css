@@ -1,0 +1,49 @@
+@media (max-width: 900px) {
+  .pass-mobile {
+    display: none !important;
+  }
+  .pass-art2 {
+    display: none;
+  }
+  .conteudo-mobile {
+    height: 200px;
+  }
+  .conteudo-mobile .box {
+    width: 40% !important;
+    height: 105px !important;
+    display: inline-block;
+    margin: 2% !important;
+    margin-right: 2% !important;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px !important;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .conteudo-mobile .box p:nth-child(1) {
+    padding-bottom: 0px !important;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .conteudo-mobile .box p:nth-child(1) img {
+    display: none;
+  }
+  .conteudo-mobile .box p:nth-child(2) {
+    font-size: 15px;
+    margin: 0;
+  }
+  .conteudo-mobile .box p:nth-child(3) {
+    top: -50px !important;
+    text-align: center;
+    font-size: 1rem !important;
+  }
+  .conteudo-sobre2 {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .conteudo-sobre2 div:nth-child(2) {
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

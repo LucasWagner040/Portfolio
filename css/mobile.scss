@@ -1,0 +1,56 @@
+@media (max-width: 900px) {
+    
+    .pass-mobile {
+        display: none !important;
+    }
+    
+    .pass-art2 {
+        display: none;
+    }
+
+    .conteudo-mobile {
+        height: 200px;
+
+        .box {
+            width: 40% !important;
+            height: 105px !important;
+            display: inline-block;
+            margin: 2% !important;
+            margin-right: 2% !important;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px !important;
+            font-size: 20px;
+            font-weight: bold;
+
+            p:nth-child(1) {
+                padding-bottom: 0px !important;
+                font-size: 1rem;
+                margin-bottom: 5px;
+
+                img {
+                    display: none;
+                }
+            }
+            p:nth-child(2){
+                font-size: 15px;
+                margin: 0;
+            }
+            p:nth-child(3) {
+                top: -50px !important;
+                text-align: center;
+                font-size: 1rem !important;
+            }
+        }
+    }
+
+    .conteudo-sobre2{
+        justify-content: space-between;
+        div:nth-child(2){
+            // margin: 0% !important;
+            padding: 10px;
+        }
+    }
+
+
+}

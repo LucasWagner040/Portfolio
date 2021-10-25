@@ -24,38 +24,150 @@ body {
   margin: 60px;
 }
 
+header a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header a:hover {
+  color: rgba(0, 191, 217, 0.49) !important;
+}
+
+header .logo {
+  font-size: 24px;
+  letter-spacing: 4px;
+  color: white;
+}
+
 header nav {
+  z-index: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: black;
-  height: 50px;
+  height: 8vh;
   position: fixed;
   width: 100%;
-  top: 0px;
-  z-index: 300;
 }
 
-header nav h1 {
-  margin: 0 0 0 95px;
-  padding: 9px 0 0 0;
-  font-size: 4vh;
-  color: white;
-  float: left;
+header main {
+  height: 92vh;
 }
 
-header nav div {
-  float: right;
-  margin: 0 95px 0 0;
-  padding: 9px 0 0 0;
+header .nav-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-header nav div a {
-  font-size: 20px;
-  color: white;
-  margin: 0 0 0 30px;
-  text-decoration: none;
+header .nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+  margin-top: 8px;
 }
 
-header nav div a:hover {
-  color: rgba(0, 191, 217, 0.49) !important;
+header .mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+header .mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-right: 30px;
+}
+
+@media (max-width: 999px) {
+  header body {
+    overflow-x: hidden;
+  }
+  header .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 65vw;
+    height: 100vh;
+    background: black;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  }
+  header .nav-list li {
+    margin-top: 50%;
+    margin-left: 0;
+    opacity: 0;
+  }
+  header .mobile-menu {
+    display: block;
+    z-index: 400;
+  }
+}
+
+header .nav-list.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+header .mobile-menu.active .line1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+          transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+header .mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+header .mobile-menu.active .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -7px);
+          transform: rotate(45deg) translate(-5px, -7px);
 }
 
 header .tela-inicio {
@@ -224,8 +336,6 @@ header .tela-inicio h1 {
           justify-content: flex-start;
   width: 100%;
   overflow: auto;
-  padding-left: 60px;
-  padding-right: 50px;
   scroll-behavior: smooth;
 }
 
@@ -303,7 +413,7 @@ header .tela-inicio h1 {
   margin-left: calc(50% - 60px);
   margin-right: calc(50% - 60px);
   border-bottom: 2px solid greenyellow;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .pass-art .conteudo-sobre2 div:nth-child(1) h1 {
@@ -312,11 +422,14 @@ header .tela-inicio h1 {
 
 .pass-art .conteudo-sobre2 div:nth-child(2) {
   width: 100%;
-  height: 100px;
 }
 
 .pass-art .conteudo-sobre2 div:nth-child(2) a {
-  margin-left: 15.5%;
+  margin-left: 10.4%;
+}
+
+.pass-art .conteudo-sobre2 div:nth-child(2) a img {
+  height: 50px;
 }
 
 .pass-art .conteudo-sobre {
@@ -333,7 +446,7 @@ header .tela-inicio h1 {
 }
 
 .pass-art .conteudo-sobre .box {
-  width: 220px;
+  width: 35%;
   height: 185px;
   display: inline-block;
   margin: 5%;
@@ -499,14 +612,5 @@ header .tela-inicio h1 {
   top: -1px;
   position: relative;
   color: black;
-}
-
-.pass-art .conteudo-sobre2 div:nth-child(2) a {
-  margin-left: 13.4%;
-}
-
-.pass-art .conteudo-sobre2 div:nth-child(2) a img {
-  width: 50px;
-  height: 50px;
 }
 /*# sourceMappingURL=main.css.map */

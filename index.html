@@ -6,24 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="shortcut icon" href="./imagens/perfil.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagens/perfil.ico" type="image/x-icon">
     <title>Portfolio</title>
 </head>
 
 <body>
 
     <header>
+
+
+
         <nav>
-            <h1>Lucas Wagner</h1>
-            <div>
-                <a href="#">Menu</a>
-                <a href="#habilidade">Conhecimento</a>
-                <a href="#projeto">Projeto</a>
-                <a href="#social">Social</a>
+            <h2 class="logo" href="/">Lucas Wagner</h2>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
+            <ul class="nav-list">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#habilidade">Conhecimento</a></li>
+                <li><a href="#projeto">Projeto</a></li>
+                <li><a href="#social">Social</a></li>
+            </ul>
         </nav>
+
+
         <div class="tela-inicio">
             <h1>Portfolio Profissional</h1>
         </div>
@@ -36,7 +47,7 @@
 
 
 
-    
+
     <main>
 
 
@@ -634,7 +645,7 @@
 
         <div class="art-2">
             <div class="pass-art">
-                <div class="conteudo">
+                <div class="conteudo conteudo-mobile">
 
                     <div class="conteudo-sobre">
                         <h1>Idioma</h1>
@@ -667,7 +678,7 @@
             </div>
 
 
-            <div class="pass-art">
+            <div class="pass-art pass-mobile">
                 <div class="conteudo">
                     <div class="conteudo-sobre">
                         <h1>Objetivo</h1>
@@ -692,18 +703,28 @@
                         <h1 style="text-align: center;">Social</h1>
                     </div>
                     <div>
-                        <li></li>
-                        <a href="https://www.instagram.com/lucas_wagner321/?hl=pt-br"><img src="./Imagens/Instagram.png" alt=""></a>
-                        <a href="https://www.linkedin.com/in/lucas-wagner-a345711b6/"><img src="./Imagens/Linkedin.png" alt=""></a>
+                        <ul>
+
+                            <a href="https://www.instagram.com/lucas_wagner321/?hl=pt-br"><img
+                                    src="./Imagens/Instagram.png"></a>
+                            <a href="https://www.linkedin.com/in/lucas-wagner-a345711b6/"><img
+                                    src="./Imagens/Linkedin.png"></a>
 
 
-                        <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5547997902780" target="_blank">
-                            <img src="./Imagens/whatsapp.png" alt="">
-                        </a>
+                            <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5547997902780"
+                                target="_blank">
+                                <img src="./Imagens/whatsapp.png">
+                            </a>
 
 
-                        <a href="https://github.com/LucasWagner040"><img src="./Imagens/GitHub.png" alt=""></a>
-                        <a href="https://www.facebook.com/lucas.wagner.98031"><img src="./Imagens/Facebook.png" alt=""></a>
+                            <a class="whatsapp-link" href="mailto:lucaswagner040@gmail.com?" target="_blank">
+                                <img src="./Imagens/gmail.png">
+                            </a>
+
+
+                            <a href="https://github.com/LucasWagner040"><img src="./Imagens/GitHub.png"></a>
+                            <a href="https://www.facebook.com/lucas.wagner.98031"><img src="./Imagens/Facebook.png"></a>
+                        </ul>
                     </div>
                 </div>
 
@@ -716,7 +737,7 @@
 
 
 
-
+    <!-- <a href=mailto:<nowiki>agentavery@sample.com?subject="link HTML">Clique aqui para nos enviar um e-mail!</a> -->
 
 
 
@@ -737,11 +758,14 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p align="center">Criei esse Portfolio para que pudesse andar juntamente com minhas habilidades em desenvolvimento web e programação, e também para divulgar e publicar projetos que construo ao longo do tempo. Esse Portfolio é a versão 2.0. 1° Dia Publicado: (24/10/2021)</p>
+                    <p align="center">Criei esse Portfolio para que pudesse andar juntamente com minhas habilidades em
+                        desenvolvimento web e programação, e também para divulgar e publicar projetos que construo ao
+                        longo do tempo. Esse Portfolio é a versão 2.0. 1° Dia Publicado: (24/10/2021)</p>
 
                     <h3>link do projeto:</h3>
 
-                    <button type="button" class="btn btn-danger"><a href="https://github.com/LucasWagner040/Portfolio">GitHub</a></button>
+                    <button type="button" class="btn btn-danger"><a
+                            href="https://github.com/LucasWagner040/Portfolio">GitHub</a></button>
 
 
                 </div>
@@ -846,7 +870,7 @@
                     <p align="center">Esse projeto foi criado para ser o final-test do meu curso de desenvolvedor
                         Front-End, consiste em ser uma loja que vende equipamentos de computação, monitores, mouses e
                         entre outros.
-                        </p>
+                    </p>
 
 
                 </div>
@@ -912,6 +936,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="script-mobile.js"></script>
 
 </body>
 
