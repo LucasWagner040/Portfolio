@@ -1,6 +1,15 @@
 @media (max-width: 900px) {
   .pass-mobile {
-    display: none !important;
+    display: block;
+    position: absolute;
+    top: 310%;
+  }
+  .pass-mobile p {
+    font-size: 18px !important;
+    text-indent: 30px;
+    font-weight: bold;
+    height: 160px !important;
+    overflow: scroll;
   }
   .pass-art2 {
     display: none;
@@ -44,6 +53,9 @@
   }
   .conteudo-sobre2 div:nth-child(2) {
     padding: 10px;
+  }
+  #social {
+    margin-top: 300px;
   }
 }
 /*# sourceMappingURL=mobile.css.map */
