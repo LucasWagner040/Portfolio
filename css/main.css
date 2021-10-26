@@ -320,7 +320,7 @@ header .tela-inicio h1 {
   position: relative;
   z-index: 1;
   margin-right: 15px;
-  margin-left: 9px;
+  margin-left: 35px;
   min-height: 180px;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -338,7 +338,7 @@ header .tela-inicio h1 {
   position: relative;
   z-index: 1;
   margin-right: 20px;
-  margin-left: 25px;
+  margin-left: 55px;
   min-height: 180px;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;

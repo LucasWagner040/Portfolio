@@ -1,18 +1,23 @@
 @media (max-width: 900px) {
+
+    .art-2 {
+        margin-bottom: 0px !important;
+    }
+
     
     .pass-mobile {
-        display: block;
-        position: absolute;
-        top: 310%;
+        display: none;
+        // position: absolute;
+        // top: 310%;
         
 
-        p {
-            font-size: 18px !important;
-            text-indent: 30px;
-            font-weight: bold;
-            height: 160px !important;
-            overflow:scroll;
-        }
+        // p {
+        //     font-size: 18px !important;
+        //     text-indent: 30px;
+        //     font-weight: bold;
+        //     height: 160px !important;
+        //     overflow:scroll;
+        // }
     }
     
     .pass-art2 {
@@ -26,8 +31,7 @@
             width: 40% !important;
             height: 105px !important;
             display: inline-block;
-            margin: 2% !important;
-            margin-right: 2% !important;
+            margin-right: 1% !important;
             background-color: white;
             border-radius: 10px;
             padding: 10px !important;
@@ -62,9 +66,9 @@
             padding: 10px;
         }
     }
-    #social{
-        margin-top: 300px;
-    }
+    // #social{
+    //     margin-top: 300px;
+    // }
 
 
 }

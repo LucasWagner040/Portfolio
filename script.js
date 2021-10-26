@@ -9,23 +9,23 @@ const prev2 = document.querySelector('#prev2')
 function handleScrollNext1 (direction){
     const cards = document.querySelector(".cartoes1")
     cards.scrollLeft = cards.scrollLeft += window.innerWidth / 2 > 600 ?
-    window.innerWidth / 2 : window.innerWidth - 135
+    window.innerWidth / 2 : window.innerWidth - 155
 }
 function handleScrollPrev1 (direction){
     const cards = document.querySelector(".cartoes1")
     cards.scrollLeft = cards.scrollLeft -= window.innerWidth / 2 > 600 ?
-    window.innerWidth / 2 : window.innerWidth - 135
+    window.innerWidth / 2 : window.innerWidth - 155
 }
 
 function handleScrollNext2 (direction){
     const cards = document.querySelector(".cartoes2")
     cards.scrollLeft = cards.scrollLeft += window.innerWidth / 2 > 600 ?
-    window.innerWidth / 2 : window.innerWidth - 115
+    window.innerWidth / 2 : window.innerWidth - 135
 }
 function handleScrollPrev2 (direction){
     const cards = document.querySelector(".cartoes2")
     cards.scrollLeft = cards.scrollLeft -= window.innerWidth / 2 > 600 ?
-    window.innerWidth / 2 : window.innerWidth - 115
+    window.innerWidth / 2 : window.innerWidth - 135
 }
 
 

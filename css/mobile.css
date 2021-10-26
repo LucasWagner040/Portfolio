@@ -1,15 +1,9 @@
 @media (max-width: 900px) {
-  .pass-mobile {
-    display: block;
-    position: absolute;
-    top: 310%;
+  .art-2 {
+    margin-bottom: 0px !important;
   }
-  .pass-mobile p {
-    font-size: 18px !important;
-    text-indent: 30px;
-    font-weight: bold;
-    height: 160px !important;
-    overflow: scroll;
+  .pass-mobile {
+    display: none;
   }
   .pass-art2 {
     display: none;
@@ -21,8 +15,7 @@
     width: 40% !important;
     height: 105px !important;
     display: inline-block;
-    margin: 2% !important;
-    margin-right: 2% !important;
+    margin-right: 1% !important;
     background-color: white;
     border-radius: 10px;
     padding: 10px !important;
@@ -53,9 +46,6 @@
   }
   .conteudo-sobre2 div:nth-child(2) {
     padding: 10px;
-  }
-  #social {
-    margin-top: 300px;
   }
 }
 /*# sourceMappingURL=mobile.css.map */
